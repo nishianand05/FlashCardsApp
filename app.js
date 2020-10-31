@@ -31,7 +31,7 @@ app.use((err, req, res, next) => {
   res.render('error');
 });
 
-app.listen(3000, ()=>{
+app.listen(port, process.env.IP, ()=>{
 	console.log("App is running on port " + port);
 })
 
